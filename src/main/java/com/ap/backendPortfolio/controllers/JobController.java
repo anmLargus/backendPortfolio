@@ -34,7 +34,7 @@ public class JobController {
 	
 	@PostMapping("/trabajos")
 	public boolean create(@RequestBody Job j) {
-		return jobService.modificar(j);
+		return jobService.crear(j);
 	}
 	
 	@PutMapping("/trabajos")

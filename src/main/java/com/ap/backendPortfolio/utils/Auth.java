@@ -7,7 +7,7 @@ import com.auth0.jwt.interfaces.JWTVerifier;
 
 public class Auth {
 	
-	static private String secret = "clave_super_hiper_secreta";
+	static private String secret = "Usuario1";
 	
 	static public String generateJWT(Login p) { // TODO recibir payload
 		try {
@@ -21,7 +21,11 @@ public class Auth {
 		        .sign(algorithm);
 
 			return token;
-		} catch (Exception e) {
+		} catch(IllegalArgumentException e) {
+			return "";
+		}
+		
+		catch (Exception e) {
 			// TODO: handle exception
 			return "";
 		}
