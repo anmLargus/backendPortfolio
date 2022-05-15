@@ -22,27 +22,27 @@ public class JobController {
 	@Autowired
 	private JobService jobService;
 	
-	@GetMapping("/trabajos")
+	@GetMapping("/jobs")
 	public List<Job> getAll() {
 		return jobService.traerTodo();
 	}
 	
-	@GetMapping("/trabajos/{id}")
+	@GetMapping("/jobs/{id}")
 	public Job getOne(@PathVariable int id) {
 		return jobService.traerUno(id);
 	}
 	
-	@PostMapping("/trabajos")
+	@PostMapping("/jobs")
 	public boolean create(@RequestBody Job j) {
 		return jobService.crear(j);
 	}
 	
-	@PutMapping("/trabajos")
+	@PutMapping("/jobs")
 	public boolean update(@RequestBody Job j) {
 		return jobService.modificar(j);
 	}
 	
-	@DeleteMapping("/trabajos/{id}")
+	@DeleteMapping("/jobs/{id}")
 	public boolean remove(@PathVariable int id) {
 		return jobService.borrar(id); 
 	}
