@@ -12,8 +12,8 @@ public class Job {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
-	private int anioInicio;
-	private int anioFin;
+	private String fechaInicio;
+	private String fechaFin;
 	private String empresa;
 	private String posicion;
 	//@Lob
@@ -29,12 +29,12 @@ public class Job {
 	 * @param descripcion
 	 * @param esActual
 	 */
-	public Job(long id, int anioInicio, int anioFin, String empresa, String posicion, String descripcion,
+	public Job(long id, String fechaInicio, String fechaFin, String empresa, String posicion, String descripcion,
 			Boolean esActual) {
 		super();
 		this.id = id;
-		this.anioInicio = anioInicio;
-		this.anioFin = anioFin;
+		this.fechaInicio = fechaInicio;
+		this.fechaFin = fechaFin;
 		this.empresa = empresa;
 		this.posicion = posicion;
 		this.descripcion = descripcion;
@@ -52,17 +52,17 @@ public class Job {
 	public void setId(long id) {
 		this.id = id;
 	}
-	public int getAnioInicio() {
-		return anioInicio;
+	public String getFechaInicio() {
+		return fechaInicio;
 	}
-	public void setAnioInicio(int anioInicio) {
-		this.anioInicio = anioInicio;
+	public void setFechaInicio(String fechaInicio) {
+		this.fechaInicio = fechaInicio;
 	}
-	public int getAnioFin() {
-		return anioFin;
+	public String getFechaFin() {
+		return fechaFin;
 	}
-	public void setAnioFin(int anioFin) {
-		this.anioFin = anioFin;
+	public void setAnioFin(String fechaFin) {
+		this.fechaFin = fechaFin;
 	}
 	public String getEmpresa() {
 		return empresa;

@@ -12,13 +12,13 @@ public class Skill {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 	private String habilidad;
-	private Number progress;
+	private int progress;
 	/**
 	 * @param id
 	 * @param habilidad
 	 * @param progress
 	 */
-	public Skill(long id, String habilidad, Number progress) {
+	public Skill(long id, String habilidad, int progress) {
 		super();
 		this.id = id;
 		this.habilidad = habilidad;
@@ -45,7 +45,7 @@ public class Skill {
 	public Number getProgress() {
 		return progress;
 	}
-	public void setProgress(Number progress) {
+	public void setProgress(int progress) {
 		this.progress = progress;
 	}		
 }

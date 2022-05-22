@@ -60,11 +60,6 @@ public class EducacionService implements ICrudService<Educacion> {
 		} catch (Exception e){
 			return false;
 		}
-	}
-
-	
-	
-	
-	
+	}	
 
 }

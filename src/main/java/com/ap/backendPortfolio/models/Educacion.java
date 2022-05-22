@@ -15,7 +15,7 @@ public class Educacion {
 	private int anioFin;
 	private String lugar;
 	private String descripcion;
-	private int calificacion;
+	
 	
 	/**
 	 * @param id
@@ -23,16 +23,16 @@ public class Educacion {
 	 * @param anioFin
 	 * @param lugar
 	 * @param descripcion
-	 * @param calificacion
+	 *
 	 */
-	public Educacion(long id, String titulo, int anioFin, String lugar, String descripcion, int calificacion) {
+	public Educacion(long id, String titulo, int anioFin, String lugar, String descripcion) {
 		super();
 		this.id = id;
 		this.titulo = titulo;
 		this.anioFin = anioFin;
 		this.lugar = lugar;
 		this.descripcion = descripcion;
-		this.calificacion = calificacion;
+		
 	}
 	/**
 	 * 
@@ -72,11 +72,6 @@ public class Educacion {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	public int getCalificacion() {
-		return calificacion;
-	}
-	public void setCalificacion(int calificacion) {
-		this.calificacion = calificacion;
-	}	
+	
 
 }
